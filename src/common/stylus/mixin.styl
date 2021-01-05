@@ -1,0 +1,14 @@
+@import "~cube-ui/src/common/stylus/mixin.styl"
+ border-1px($color)
+  position:relative
+  &:after
+   display:block
+   position:absolute
+   left:0
+   bottom:0
+   width:100%
+   border:1px solid $color
+   content:' '
+ border-none()
+  &::after
+     display:none
